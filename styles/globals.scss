@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('~bootstrap-icons/font/bootstrap-icons.css');
+
 @import 'gradients';
 @import 'spacings';
 @import 'texts';
+@import 'shadows';
 
 a {
   color: inherit;
@@ -30,6 +33,7 @@ h1 {
   font-weight: bold;
   font-size: 36px;
   line-height: 136.02%;
+  color: $heading-dark;
 }
 
 h2 {
@@ -38,6 +42,7 @@ h2 {
   font-weight: 600;
   font-size: 28px;
   line-height: 136.02%;
+  color: $heading-dark;
 }
 
 h3 {
@@ -46,6 +51,7 @@ h3 {
   font-weight: 600;
   font-size: 20px;
   line-height: 136.52%;
+  color: $heading-dark;
 }
 
 h4 {
@@ -55,6 +61,7 @@ h4 {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: -0.005em;
+  color: $heading-dark;
 }
 
 h5 {
@@ -63,6 +70,7 @@ h5 {
   font-weight: 600;
   font-size: 16px;
   line-height: 25px;
+  color: $heading-dark;
 }
 
 h6 {
@@ -71,6 +79,7 @@ h6 {
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
+  color: $heading-dark;
 }
 
 p {

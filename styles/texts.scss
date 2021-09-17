@@ -2,26 +2,32 @@
 
 .d1 {
   height: 100px;
+  color: $heading-dark;
 }
 
 .d2 {
   height: 92px;
+  color: $heading-dark;
 }
 
 .d3 {
   height: 77px;
+  color: $heading-dark;
 }
 
 .d4 {
   height: 68px;
+  color: $heading-dark;
 }
 
 .d5 {
   height: 58px;
+  color: $heading-dark;
 }
 
 .d6 {
   height: 48px;
+  color: $heading-dark;
 }
 
 .xl-text {
@@ -86,4 +92,49 @@
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+}
+
+.heading-light {
+  color: $heading-light;
+}
+
+.dark-text {
+  color: $text-dark;
+}
+
+.muted-text {
+  color: $text-muted;
+}
+
+// Theme text
+.primary-text {
+  color: $primary;
+}
+
+.secondary-text {
+  color: $secondary;
+}
+
+.tertiary-text {
+  color: $tertiary;
+}
+
+.success-text {
+  color: $success;
+}
+
+.warning-text {
+  color: $warning;
+}
+
+.danger-text {
+  color: $danger;
+}
+
+.info-text {
+  color: $info;
+}
+
+.dark-text {
+  color: $dark;
 }
