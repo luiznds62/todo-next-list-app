@@ -1,0 +1,31 @@
+@mixin bg-gradient-primary() {
+  background: linear-gradient(225deg, #d665ff 0%, #4c6fff 100%);
+}
+
+@mixin bg-gradient-secondary() {
+  background: linear-gradient(225deg, #f1f1f5 0%, #e4ecf7 100%);
+}
+
+@mixin bg-gradient-tertiary() {
+  background: linear-gradient(224.47deg, #ff92ae 8.18%, #ff3d9a 95.84%);
+}
+
+@mixin bg-gradient-success() {
+  background: linear-gradient(225deg, #67e9f1 0%, #24e795 100%);
+}
+
+@mixin bg-gradient-warning() {
+  background: linear-gradient(225deg, #ffef5e 0%, #f7936f 100%);
+}
+
+@mixin bg-gradient-danger() {
+  background: linear-gradient(225deg, #ffc656 0%, #f16063 100%);
+}
+
+@mixin bg-gradient-info() {
+  background: linear-gradient(225deg, #68dbf2 0.01%, #509cf5 100%);
+}
+
+@mixin bg-gradient-dark() {
+  background: linear-gradient(225deg, #29272e 0%, #27272e 100%);
+}
