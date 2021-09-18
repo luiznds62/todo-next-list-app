@@ -1,0 +1,66 @@
+$alert-types: (
+  'primary': $primary-dark,
+  'secondary': $secondary-dark,
+  'tertiary': $tertiary-dark,
+  'success': $success-dark,
+  'warning': $warning-dark,
+  'danger': $danger-dark,
+  'info': $info-dark,
+  'dark': $dark-dark
+);
+
+.alert {
+  border-radius: 16px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 475px;
+  color: white;
+}
+
+.alert-primary {
+  background-color: $primary;
+  border-color: $primary;
+}
+
+.alert-secondary {
+  background-color: $secondary;
+  border-color: $secondary;
+}
+
+.alert-tertiary {
+  background-color: $tertiary;
+  border-color: $tertiary;
+}
+
+.alert-success {
+  background-color: $success;
+  border-color: $success;
+}
+
+.alert-warning {
+  background-color: $warning;
+  border-color: $warning;
+}
+
+.alert-danger {
+  background-color: $danger;
+  border-color: $danger;
+}
+
+.alert-info {
+  background-color: $info;
+  border-color: $info;
+}
+
+.alert-dark {
+  background-color: $dark;
+  border-color: $dark;
+}
+
+@each $type, $color in $alert-types {
+  .bg-#{$type}-icon {
+    background: $color;
+  }
+}
