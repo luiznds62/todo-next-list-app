@@ -7,7 +7,7 @@ export default function TaskCalendar() {
       <div className="container">
         <h1>Almost before we knew it, we had left the ground.</h1>
         {['primary', 'secondary', 'tertiary', 'success', 'danger', 'warning', 'info', 'light', 'dark'].map((variant, idx) => (
-          <AlertComponent key={idx} variant={variant}>
+          <AlertComponent icon="bi bi-check-circle" key={idx} variant={variant}>
             A short alert message here…
           </AlertComponent>
         ))}

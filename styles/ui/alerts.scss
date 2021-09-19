@@ -1,4 +1,15 @@
 $alert-types: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'tertiary': $tertiary,
+  'success': $success,
+  'warning': $warning,
+  'danger': $danger,
+  'info': $info,
+  'dark': $dark
+);
+
+$alert-types-dark: (
   'primary': $primary-dark,
   'secondary': $secondary-dark,
   'tertiary': $tertiary-dark,
@@ -16,50 +27,23 @@ $alert-types: (
   align-items: center;
   justify-content: flex-start;
   max-width: 475px;
-  color: white;
+  color: $surface-primary;
 }
 
-.alert-primary {
-  background-color: $primary;
-  border-color: $primary;
-}
-
-.alert-secondary {
-  background-color: $secondary;
-  border-color: $secondary;
-}
-
-.alert-tertiary {
-  background-color: $tertiary;
-  border-color: $tertiary;
-}
-
-.alert-success {
-  background-color: $success;
-  border-color: $success;
-}
-
-.alert-warning {
-  background-color: $warning;
-  border-color: $warning;
-}
-
-.alert-danger {
-  background-color: $danger;
-  border-color: $danger;
-}
-
-.alert-info {
-  background-color: $info;
-  border-color: $info;
-}
-
-.alert-dark {
-  background-color: $dark;
-  border-color: $dark;
+.alert-button {
+  @extend .mr-16;
+  margin-left: auto;
+  cursor: pointer;
 }
 
 @each $type, $color in $alert-types {
+  .alert-#{$type} {
+    background-color: $color;
+    border-color: $color;
+  }
+}
+
+@each $type, $color in $alert-types-dark {
   .bg-#{$type}-icon {
     background: $color;
   }
