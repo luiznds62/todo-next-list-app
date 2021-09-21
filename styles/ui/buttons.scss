@@ -120,6 +120,14 @@ $btn-round-types: (
   color: $text-white;
 }
 
+.btn-sm {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 10px;
+  letter-spacing: -0.005em;
+}
+
 .btn-lg {
   font-style: normal;
   font-weight: 600;
