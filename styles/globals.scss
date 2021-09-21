@@ -5,10 +5,12 @@
 @import 'spacings';
 @import 'texts';
 @import 'shadows';
+@import 'backgrounds';
 
 // UI
 @import 'ui/alerts';
 @import 'ui/buttons';
+@import 'ui/badges';
 
 a {
   color: inherit;

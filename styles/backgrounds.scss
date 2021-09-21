@@ -1,0 +1,16 @@
+$bg-types: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'tertiary': $tertiary,
+  'success': $success,
+  'warning': $warning,
+  'danger': $danger,
+  'info': $info,
+  'dark': $dark
+);
+
+@each $type, $color in $bg-types {
+  .bg-#{$type} {
+    background-color: $color !important;
+  }
+}

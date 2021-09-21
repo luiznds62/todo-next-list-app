@@ -1,3 +1,4 @@
+import BadgeComponent from '../ui/badge/Badge';
 import ButtonComponent from '../ui/button/Button';
 
 export default function TaskCalendar() {
@@ -8,6 +9,10 @@ export default function TaskCalendar() {
         <ButtonComponent variant={'primary'} label="Button" iconLeft="bi bi-plus" disabled></ButtonComponent>
         <div className="mt-2">
           <ButtonComponent variant={'primary'} icon="bi bi-plus"></ButtonComponent>
+        </div>
+
+        <div className="mt-2">
+          <BadgeComponent variant={'primary'} label="New"></BadgeComponent>
         </div>
       </div>
     </>
