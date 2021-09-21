@@ -1,0 +1,197 @@
+$btn-types: (
+  'primary': (
+    'color': $primary,
+    'color-light': $primary-light
+  ),
+  'secondary': (
+    'color': $secondary,
+    'color-light': $secondary-light
+  ),
+  'tertiary': (
+    'color': $tertiary,
+    'color-light': $tertiary-light
+  ),
+  'success': (
+    'color': $success,
+    'color-light': $success-light
+  ),
+  'warning': (
+    'color': $warning,
+    'color-light': $warning-light
+  ),
+  'danger': (
+    'color': $danger,
+    'color-light': $danger-light
+  ),
+  'info': (
+    'color': $info,
+    'color-light': $info-light
+  ),
+  'dark': (
+    'color': $dark,
+    'color-light': $dark-light
+  )
+);
+
+$btn-outline-types: (
+  'outline-primary': (
+    'color': $primary,
+    'color-light': $primary-light
+  ),
+  'outline-secondary': (
+    'color': $secondary,
+    'color-light': $secondary-light
+  ),
+  'outline-tertiary': (
+    'color': $tertiary,
+    'color-light': $tertiary-light
+  ),
+  'outline-success': (
+    'color': $success,
+    'color-light': $success-light
+  ),
+  'outline-warning': (
+    'color': $warning,
+    'color-light': $warning-light
+  ),
+  'outline-danger': (
+    'color': $danger,
+    'color-light': $danger-light
+  ),
+  'outline-info': (
+    'color': $info,
+    'color-light': $info-light
+  ),
+  'outline-dark': (
+    'color': $dark,
+    'color-light': $dark-light
+  )
+);
+
+$btn-round-types: (
+  'round-primary': (
+    'color': $primary,
+    'color-light': $primary-light
+  ),
+  'round-secondary': (
+    'color': $secondary,
+    'color-light': $secondary-light
+  ),
+  'round-tertiary': (
+    'color': $tertiary,
+    'color-light': $tertiary-light
+  ),
+  'round-success': (
+    'color': $success,
+    'color-light': $success-light
+  ),
+  'round-warning': (
+    'color': $warning,
+    'color-light': $warning-light
+  ),
+  'round-danger': (
+    'color': $danger,
+    'color-light': $danger-light
+  ),
+  'round-info': (
+    'color': $info,
+    'color-light': $info-light
+  ),
+  'round-dark': (
+    'color': $dark,
+    'color-light': $dark-light
+  )
+);
+
+.btn {
+  font-family: $font-family;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:not(.btn-lg, .btn-sm) {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  height: 36px;
+  padding: 12px 20px;
+  color: $text-white;
+}
+
+.btn-lg {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  height: 46px;
+}
+
+@each $type, $value in $btn-types {
+  .btn-#{$type} {
+    @if map-get($value, color) == $secondary {
+      color: $text-light !important;
+    }
+
+    background-color: map-get($value, color);
+    border-color: map-get($value, color);
+  }
+
+  .btn-#{$type}:hover {
+    @if map-get($value, color) == $secondary {
+      color: $text-white !important;
+    }
+  }
+
+  .btn-#{$type}:focus,
+  .btn-#{$type}:active {
+    box-shadow: 0 0 0 0.25rem map-get($value, color-light) !important;
+  }
+}
+
+@each $type, $value in $btn-outline-types {
+  .btn-#{$type} {
+    @if map-get($value, color) == $secondary {
+      color: $text-light !important;
+    }
+
+    color: map-get($value, color) !important;
+    background-color: $surface-primary;
+    border-color: map-get($value, color);
+  }
+
+  .btn-#{$type}:hover {
+    @if map-get($value, color) == $tertiary {
+      background-color: $tertiary !important;
+    }
+
+    @if map-get($value, color) != $secondary {
+      color: $text-white !important;
+    }
+  }
+
+  .btn-#{$type}:focus,
+  .btn-#{$type}:active {
+    box-shadow: 0 0 0 0.25rem map-get($value, color-light) !important;
+  }
+}
+
+@each $type, $value in $btn-round-types {
+  .btn-#{$type} {
+    @if map-get($value, color) == $secondary {
+      color: $text-light !important;
+    }
+
+    border-radius: 100px;
+    background-color: map-get($value, color) !important;
+    border-color: map-get($value, color) !important;
+  }
+
+  .btn-#{$type}:focus,
+  .btn-#{$type}:active {
+    box-shadow: 0 0 0 0.25rem map-get($value, color-light) !important;
+  }
+}
