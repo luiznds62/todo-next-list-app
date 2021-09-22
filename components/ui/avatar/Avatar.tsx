@@ -15,6 +15,10 @@ export default function AvatarComponent({ name, src, size, type }: any) {
   }, [name, initials]);
 
   return (
-    <div className={`${src ? 'image-avatar' : 'default-avatar'} ${size && `avatar-${size}`} ${type && `avatar-${type}`}`}>{initials}</div>
+    <div className="avatar-container">
+      <div className={`${src ? 'image-avatar' : 'default-avatar'} ${size && `avatar-${size}`} ${type && `avatar-${type}`}`}>{initials}</div>
+      {!type && <span className={size ? `avatar-status-${size}` : 'avatar-status-md'}></span>}
+      {type && <span className={size ? `avatar-round-status-${size}` : 'avatar-round-status-md'}></span>}
+    </div>
   );
 }

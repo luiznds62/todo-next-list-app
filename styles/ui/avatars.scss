@@ -1,3 +1,134 @@
+.avatar-status {
+  background: $success;
+  border: 3px solid white;
+  position: absolute;
+  border-radius: 100%;
+}
+
+.avatar-container {
+  position: relative;
+  display: inline-block;
+}
+
+.avatar-status-xl {
+  @extend .avatar-status;
+  width: 25px;
+  height: 25px;
+  bottom: 80%;
+  left: 81.54%;
+  right: 0%;
+}
+
+.avatar-round-status-xl {
+  @extend .avatar-status;
+  width: 25px;
+  height: 25px;
+  left: 76.92%;
+  right: 4.62%;
+  top: 4.62%;
+  bottom: 76.92%;
+}
+
+.avatar-status-lg {
+  @extend .avatar-status;
+  width: 20px;
+  height: 20px;
+  left: 81.54%;
+  right: 0%;
+  top: 0%;
+  bottom: 81.54%;
+}
+
+.avatar-round-status-lg {
+  @extend .avatar-status;
+  width: 20px;
+  height: 20px;
+  left: 76.92%;
+  right: 4.62%;
+  top: 4.62%;
+  bottom: 76.92%;
+}
+
+.avatar-status-md {
+  @extend .avatar-status;
+  width: 18px;
+  height: 18px;
+  left: 80.5%;
+  right: 0%;
+  top: 0%;
+  bottom: 81.54%;
+}
+
+.avatar-round-status-md {
+  @extend .avatar-status;
+  width: 18px;
+  height: 18px;
+  left: 76%;
+  right: 0%;
+  top: 3%;
+  bottom: 81.54%;
+}
+
+.avatar-status-sm {
+  @extend .avatar-status;
+  width: 15px;
+  height: 15px;
+  left: 80.5%;
+  right: 0%;
+  top: 0%;
+  bottom: 81.54%;
+}
+
+.avatar-round-status-sm {
+  @extend .avatar-status;
+  width: 15px;
+  height: 15px;
+  left: 76%;
+  right: 0%;
+  top: 3%;
+  bottom: 81.54%;
+}
+
+.avatar-status-xs {
+  @extend .avatar-status;
+  width: 13px;
+  height: 13px;
+  left: 79.5%;
+  right: 0%;
+  top: -2%;
+  bottom: 81.54%;
+}
+
+.avatar-round-status-xs {
+  @extend .avatar-status;
+  width: 13px;
+  height: 13px;
+  left: 76%;
+  right: 0%;
+  top: 3%;
+  bottom: 81.54%;
+}
+
+.avatar-status-xss {
+  @extend .avatar-status;
+  width: 11px;
+  height: 11px;
+  left: 74.5%;
+  right: 0%;
+  top: -8%;
+  bottom: 81.54%;
+}
+
+.avatar-round-status-xss {
+  @extend .avatar-status;
+  width: 11px;
+  height: 11px;
+  left: 72%;
+  right: 0%;
+  top: -3%;
+  bottom: 81.54%;
+}
+
 .default-avatar {
   background-color: $primary;
   max-width: 116px;
