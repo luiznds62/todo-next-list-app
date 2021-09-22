@@ -11,3 +11,22 @@
   display: flex;
   align-items: center;
 }
+
+.round-badge {
+  border-radius: 100px;
+}
+
+@mixin colorized-badge($color) {
+  background-color: $color;
+  color: $text-white !important;
+
+  @if $color == $secondary {
+    color: $text-light !important;
+  }
+}
+
+@each $type, $color in $colors-simple-array {
+  .badge-#{$type} {
+    @include colorized-badge($color);
+  }
+}

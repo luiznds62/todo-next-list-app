@@ -11,9 +11,22 @@ export default function TaskCalendar() {
           <ButtonComponent variant={'primary'} icon="bi bi-plus"></ButtonComponent>
         </div>
 
-        <div className="mt-2">
-          <BadgeComponent variant={'primary'} label="New"></BadgeComponent>
-        </div>
+        {[
+          'round-badge badge-primary',
+          'round-badge badge-secondary',
+          'round-badge badge-tertiary',
+          'round-badge badge-success',
+          'round-badge badge-warning',
+          'round-badge badge-danger',
+          'round-badge badge-info',
+          'round-badge badge-dark'
+        ].map((variant, idx) => {
+          return (
+            <div key={idx} className="mt-2">
+              <BadgeComponent variant={variant} label="New"></BadgeComponent>
+            </div>
+          );
+        })}
       </div>
     </>
   );

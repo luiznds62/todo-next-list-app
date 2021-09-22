@@ -2,3 +2,119 @@
 
 $font-family: -apple-system, 'Inter', BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
   sans-serif;
+
+$colors-simple-array: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'tertiary': $tertiary,
+  'success': $success,
+  'warning': $warning,
+  'danger': $danger,
+  'info': $info,
+  'dark': $dark
+);
+
+$colors-composed-light: (
+  'primary': (
+    'color': $primary,
+    'color-light': $primary-light
+  ),
+  'secondary': (
+    'color': $secondary,
+    'color-light': $secondary-light
+  ),
+  'tertiary': (
+    'color': $tertiary,
+    'color-light': $tertiary-light
+  ),
+  'success': (
+    'color': $success,
+    'color-light': $success-light
+  ),
+  'warning': (
+    'color': $warning,
+    'color-light': $warning-light
+  ),
+  'danger': (
+    'color': $danger,
+    'color-light': $danger-light
+  ),
+  'info': (
+    'color': $info,
+    'color-light': $info-light
+  ),
+  'dark': (
+    'color': $dark,
+    'color-light': $dark-light
+  )
+);
+
+$colors-round-composed-light: (
+  'round-primary': (
+    'color': $primary,
+    'color-light': $primary-light
+  ),
+  'round-secondary': (
+    'color': $secondary,
+    'color-light': $secondary-light
+  ),
+  'round-tertiary': (
+    'color': $tertiary,
+    'color-light': $tertiary-light
+  ),
+  'round-success': (
+    'color': $success,
+    'color-light': $success-light
+  ),
+  'round-warning': (
+    'color': $warning,
+    'color-light': $warning-light
+  ),
+  'round-danger': (
+    'color': $danger,
+    'color-light': $danger-light
+  ),
+  'round-info': (
+    'color': $info,
+    'color-light': $info-light
+  ),
+  'round-dark': (
+    'color': $dark,
+    'color-light': $dark-light
+  )
+);
+
+$colors-outlined-composed-light: (
+  'outline-primary': (
+    'color': $primary,
+    'color-light': $primary-light
+  ),
+  'outline-secondary': (
+    'color': $secondary,
+    'color-light': $secondary-light
+  ),
+  'outline-tertiary': (
+    'color': $tertiary,
+    'color-light': $tertiary-light
+  ),
+  'outline-success': (
+    'color': $success,
+    'color-light': $success-light
+  ),
+  'outline-warning': (
+    'color': $warning,
+    'color-light': $warning-light
+  ),
+  'outline-danger': (
+    'color': $danger,
+    'color-light': $danger-light
+  ),
+  'outline-info': (
+    'color': $info,
+    'color-light': $info-light
+  ),
+  'outline-dark': (
+    'color': $dark,
+    'color-light': $dark-light
+  )
+);
