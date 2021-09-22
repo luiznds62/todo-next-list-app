@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export default function AvatarComponent({ name, src, size }: any) {
+export default function AvatarComponent({ name, src, size, type }: any) {
   const [initials, setInitials] = useState('');
 
   useEffect(() => {
@@ -14,5 +14,7 @@ export default function AvatarComponent({ name, src, size }: any) {
     }
   }, [name, initials]);
 
-  return <div className={`${src ? 'image-avatar' : 'default-avatar'} ${size && `avatar-${size}`}`}>{initials}</div>;
+  return (
+    <div className={`${src ? 'image-avatar' : 'default-avatar'} ${size && `avatar-${size}`} ${type && `avatar-${type}`}`}>{initials}</div>
+  );
 }
