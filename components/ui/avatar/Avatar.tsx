@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 export default function AvatarComponent({ name, src, size, type }: any) {
   const [initials, setInitials] = useState('');
@@ -16,7 +17,17 @@ export default function AvatarComponent({ name, src, size, type }: any) {
 
   return (
     <div className="avatar-container">
-      <div className={`${src ? 'image-avatar' : 'default-avatar'} ${size && `avatar-${size}`} ${type && `avatar-${type}`}`}>{initials}</div>
+      <div className={`default-avatar ${size && `avatar-${size}`} ${type && `avatar-${type}`}`}>
+        {src && (
+          <Image
+            src={src}
+            className={!type ? (size ? `avatar-image-${size}` : 'avatar-image-md') : 'avatar-round-image'}
+            alt="avatar"
+            layout="fill"
+          />
+        )}
+        {initials}
+      </div>
       {!type && <span className={size ? `avatar-status-${size}` : 'avatar-status-md'}></span>}
       {type && <span className={size ? `avatar-round-status-${size}` : 'avatar-round-status-md'}></span>}
     </div>
