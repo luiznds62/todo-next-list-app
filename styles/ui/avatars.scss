@@ -1,0 +1,68 @@
+.default-avatar {
+  background-color: $primary;
+  max-width: 116px;
+  max-height: 116px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  width: 64px;
+  height: 64px;
+  color: $text-white;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 136.52%;
+}
+
+.rounded-avatar {
+  border-radius: 100px;
+}
+
+.avatar-xl {
+  width: 116px;
+  height: 116px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 136.02%;
+}
+
+.avatar-lg {
+  width: 82px;
+  height: 82px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 136.02%;
+}
+
+.avatar-sm {
+  width: 46px;
+  height: 46px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.005em;
+}
+
+.avatar-xs {
+  width: 36px;
+  height: 36px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 10px !important;
+}
+
+.avatar-xss {
+  width: 24px;
+  height: 24px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 16px;
+  border-radius: 7px !important;
+}
