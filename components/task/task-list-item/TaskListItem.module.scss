@@ -1,0 +1,26 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/texts.scss';
+@import '../../../styles/spacings.scss';
+
+.container {
+  @extend .mb-16;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.sub {
+  @extend .xs-text;
+}
+
+.description {
+  margin-bottom: 0px !important;
+}
+
+.dotButton {
+  margin-left: auto !important;
+  margin-bottom: 8px;
+}

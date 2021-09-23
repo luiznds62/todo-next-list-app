@@ -1,5 +1,10 @@
+@import '../../styles/colors.scss';
+@import '../../styles/texts.scss';
+@import '../../styles/spacings.scss';
+
 .container {
   height: 100%;
   display: grid;
   grid-template-rows: 80px auto;
+  border-right: solid 1px $surface-light;
 }

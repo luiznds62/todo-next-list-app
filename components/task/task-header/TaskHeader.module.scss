@@ -1,0 +1,14 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/texts.scss';
+@import '../../../styles/spacings.scss';
+
+.container {
+  @extend .mr-16;
+  @extend .ml-16;
+
+  background-color: $surface-primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px $surface-light;
+}

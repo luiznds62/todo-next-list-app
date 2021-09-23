@@ -1,5 +1,5 @@
 import Navbar from '../navbar/Navbar';
-import TaskCalendar from '../task-calendar/TaskCalendar';
+import TaskCalendar from '../task/task-calendar/TaskCalendar';
 import styles from './Main.module.scss';
 
 export default function Main() {
