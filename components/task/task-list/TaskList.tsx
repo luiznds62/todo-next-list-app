@@ -1,18 +1,15 @@
+import Task from '../../../model/Task';
 import TaskListItem from '../task-list-item/TaskListItem';
 import styles from './TaskList.module.scss';
 
-export default function TaskList() {
-  const items = [
-    { description: 'Walk the dogs', from: '9am', to: '10:30am' },
-    { description: 'Look at events for Here', from: '11am', to: '12 am' },
-    { description: 'Daily ideas demo for devs', from: '2pm', to: '4pm' }
-  ];
+export default function TaskList({ tasks }: any) {
+  const taskList = JSON.parse(tasks);
 
   return (
     <div className={styles.container}>
       <h5 className="mt-24 mb-16">Today</h5>
-      {items.map((item, idx) => {
-        return <TaskListItem description={item.description} from={item.from} to={item.to} key={idx} />;
+      {taskList.map((task: Task, idx: any) => {
+        return <TaskListItem description={task.description} from={task.from} to={task.to} key={idx} />;
       })}
     </div>
   );

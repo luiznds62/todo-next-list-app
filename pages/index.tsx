@@ -4,8 +4,9 @@ import Sidenav from '../components/sidenav/Sidenav';
 import Layout from '../components/layout/Layout';
 import styles from '../styles/Home.module.scss';
 import Main from '../components/main/Main';
+import taskService from '../services/TaskService';
 
-export default function Home() {
+export default function Home({ tasks }: any) {
   return (
     <div className={styles.container}>
       <Head>
@@ -36,9 +37,23 @@ export default function Home() {
       ></Script>
 
       <Layout>
-        <Sidenav></Sidenav>
+        <Sidenav tasks={tasks}></Sidenav>
         <Main></Main>
       </Layout>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const tasks = JSON.stringify(await taskService.getTasks());
+
+  if (!tasks) {
+    return {
+      notFound: true
+    };
+  }
+
+  return {
+    props: { tasks }
+  };
 }
