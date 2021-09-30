@@ -6,4 +6,10 @@
   height: 80px;
   background-color: $surface-primary;
   border-bottom: solid 1px $surface-light;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  @extend .main-spacing;
 }

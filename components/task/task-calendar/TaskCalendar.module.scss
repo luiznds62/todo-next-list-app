@@ -1,6 +1,8 @@
 @import '../../../styles/colors.scss';
 @import '../../../styles/texts.scss';
+@import '../../../styles/spacings.scss';
 
-.test {
-  background-color: $primary;
+.container {
+  @extend .mt-4;
+  @extend .main-spacing;
 }
