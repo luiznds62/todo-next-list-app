@@ -56,10 +56,11 @@
 @each $type, $value in $colors-outlined-composed-light {
   .btn-#{$type} {
     @if map-get($value, color) == $secondary {
-      color: $text-light !important;
+      color: $dark !important;
+    } @else {
+      color: map-get($value, color) !important;
     }
 
-    color: map-get($value, color) !important;
     background-color: $surface-primary;
     border-color: map-get($value, color);
   }
@@ -69,9 +70,7 @@
       background-color: $tertiary !important;
     }
 
-    @if map-get($value, color) != $secondary {
-      color: $text-white !important;
-    }
+    color: $text-white !important;
   }
 
   .btn-#{$type}:focus,

@@ -7,9 +7,44 @@
   background-color: $surface-primary;
   border-bottom: solid 1px $surface-light;
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
 .content {
-  @extend .main-spacing;
+  @extend .main-spacing-left;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 870px;
+}
+
+.leftPart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.leftRightIcons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.todayDate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.userContainer {
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
